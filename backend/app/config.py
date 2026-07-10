@@ -1,8 +1,8 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    GROQ_API_KEY: str = "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"
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/hcp_crm"
+    GROQ_API_KEY: str = "" #Hi team, I removed this becasue of security reasons, paste your groq key here 
+    DATABASE_URL: str = "" #and set your name db , when the backend runs it automatically creates the db but we need a hcp_crm database created 
 
     class Config:
         env_file = ".env"
