@@ -8,8 +8,8 @@ extracts structured fields from natural language and fills the form.
 - **Frontend**: React + Redux Toolkit + Tailwind CSS. Split screen — read-only
   form (left), chat interface (right).
 - **Backend**: FastAPI + LangGraph + LangChain (`langchain-groq`).
-- **LLMs (Groq)**: `gemma2-9b-it` for extraction/tool routing, `llama-3.3-70b-versatile`
-  for follow-up suggestion generation.
+- **LLMs (Groq)**: `gemma2-9b-it` and , `llama-3.3-70b-versatile` ( mentioned in doc)
+                    `openai/gpt-oss-20b` and `openai/gpt-oss-120b` ( above models are depricated, hence i am using these models)
 - **Database**: PostgreSQL (SQLAlchemy ORM), tables: `hcps`, `interactions`.
 
 ## LangGraph Agent
